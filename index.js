@@ -64,7 +64,7 @@ form.addEventListener("submit", handleSubmit);
 updateTable();
 
 // Set max date for the Date of Birth input field
-const dateInput = document.querySelector("#date");
+const dateInput = document.querySelector("#dob");
 const today = new Date();
 const formattedMax = today.getFullYear()-18 + "-" + String(today.getMonth() + 1).padStart(2, '0') + "-" + String(today.getDate()).padStart(2, '0');
 const formattedMin = today.getFullYear()-55 + "-" + String(today.getMonth() + 1).padStart(2, '0') + "-" + String(today.getDate()).padStart(2, '0');
