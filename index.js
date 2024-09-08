@@ -28,7 +28,7 @@ function updateTable(){
         entry.appendChild(date);
 
         let checked  = document.createElement("td");
-        checked.append(element.checked ? "Yes" : "No");
+        checked.append(element.checked ? "true" : "false");
         entry.appendChild(checked);
     });
 }
@@ -42,8 +42,7 @@ function handleSubmit(event) {
     const dob = document.querySelector("#dob").value;
     const password = document.querySelector("#password").value;
     const email = document.querySelector("#email").value;
-    let checked = document.querySelector("#terms");
-    checked = checked?"true":"false";
+    let checked = document.querySelector("#terms").checked;
 
     const data = {
         name,
