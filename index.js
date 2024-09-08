@@ -42,7 +42,8 @@ function handleSubmit(event) {
     const dob = document.querySelector("#dob").value;
     const password = document.querySelector("#password").value;
     const email = document.querySelector("#email").value;
-    const checked = document.querySelector("#terms").checked;
+    let checked = document.querySelector("#terms");
+    checked = checked?"true":"false";
 
     const data = {
         name,
